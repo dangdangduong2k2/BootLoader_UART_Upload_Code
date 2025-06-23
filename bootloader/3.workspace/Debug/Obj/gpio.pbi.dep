@@ -1,0 +1,4 @@
+gpio.pbi: \
+  D:\1.MCU\STM32\1.Projects\bare\bootloader\1.driver\1.peripheral_driver\1.gpio\gpio.c \
+  D:\1.MCU\STM32\1.Projects\bare\bootloader\1.driver\1.peripheral_driver\1.gpio/gpio.h \
+  D:\1.MCU\STM32\1.Projects\bare\bootloader\3.workspace\..\2.system\0.system_handle\system_handle.h

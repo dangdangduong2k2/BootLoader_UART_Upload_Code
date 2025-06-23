@@ -1,0 +1,36 @@
+#Generating source browse information for project bare_metal_f411
+
+
+#Abbreviations
+cc = C$:\Program$ Files$ (x86)\IAR$ Systems\Embedded$ Workbench$ 8.3\common\bin\SourceIndexer.exe
+ll = C$:\Program$ Files$ (x86)\IAR$ Systems\Embedded$ Workbench$ 8.3\common\bin\PbdLink.exe
+bd = C$:\Program$ Files$ (x86)\IAR$ Systems\Embedded$ Workbench$ 8.3\common\bin\makeBrowseData.exe
+
+
+
+#Rules
+rule index
+  depfile = $out.dep
+  command = $cc -out=$out -f $in
+rule link
+  command = $ll -M $out $in
+rule browsedata
+  command = $bd $in -output  $out
+
+
+
+#Build steps
+build main.pbi : index main.xcl
+build delay.pbi : index delay.xcl
+build clock.pbi : index clock.xcl
+build gpio.pbi : index gpio.xcl
+build uart.pbi : index uart.xcl
+build system_handle.pbi : index system_handle.xcl
+build it.pbi : index it.xcl
+build bare_metal_f411_part0.pbi : link main.pbi delay.pbi clock.pbi
+build bare_metal_f411_part1.pbi : link gpio.pbi uart.pbi system_handle.pbi
+build bare_metal_f411_part2.pbi : link it.pbi
+build bare_metal_f411.pbd : link bare_metal_f411_part0.pbi bare_metal_f411_part1.pbi bare_metal_f411_part2.pbi
+build bare_metal_f411.pbw : browsedata bare_metal_f411.pbd
+
+

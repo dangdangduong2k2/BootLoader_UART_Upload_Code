@@ -1,0 +1,3 @@
+gpio.pbi: \
+  D:\1.MCU\STM32\1.Projects\app\1.driver\1.peripheral_driver\1.gpio\gpio.c \
+  D:\1.MCU\STM32\1.Projects\app\1.driver\1.peripheral_driver\1.gpio/gpio.h

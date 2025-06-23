@@ -1,0 +1,5 @@
+delay.pbi: \
+  D:\1.MCU\STM32\1.Projects\bare\bootloader\1.driver\0.user_driver\0.delay\delay.c \
+  D:\1.MCU\STM32\1.Projects\bare\bootloader\1.driver\0.user_driver\0.delay/delay.h \
+  D:\1.MCU\STM32\1.Projects\bare\bootloader\3.workspace\..\1.driver\1.peripheral_driver\0.clock\clock.h \
+  D:\1.MCU\STM32\1.Projects\bare\bootloader\3.workspace\..\2.system\0.system_handle\system_handle.h

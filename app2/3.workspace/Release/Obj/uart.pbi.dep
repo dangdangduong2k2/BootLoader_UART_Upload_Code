@@ -1,0 +1,3 @@
+uart.pbi: \
+  D:\1.MCU\STM32\1.Projects\app\1.driver\1.peripheral_driver\2.uart\uart.c \
+  D:\1.MCU\STM32\1.Projects\app\1.driver\1.peripheral_driver\2.uart/uart.h
